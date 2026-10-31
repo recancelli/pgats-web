@@ -49,7 +49,10 @@ function adicionarPrimeiroProdutoAoCarrinho() {
 }
 
 function acessarCarrinho() {
-    cy.get('a[href*=view_cart]').first().click()
+    cy.get('#cartModal')
+        .should('be.visible')
+        .contains('a[href="/view_cart"]', 'View Cart')
+        .click()
     cy.url().should('include', '/view_cart')
 }
 
