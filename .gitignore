@@ -1,0 +1,8 @@
+# Dependencies
+node_modules/
+
+# Cypress generated artifacts
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/
+cypress/reports/
